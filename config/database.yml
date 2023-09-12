@@ -1,0 +1,27 @@
+default: &default
+   adapter: postgresql
+   encoding: unicode
+development:
+   adapter: postgresql
+   encoding: unicode
+   database: karan_development
+   username: hemant
+   password: hemant
+   host: localhost
+   port: 5432
+test:
+   adapter: postgresql
+   encoding: unicode
+   database: karan_test
+   username: hemant
+   password: hemant
+   host: localhost
+   port: 5432
+production:
+   adapter: postgresql
+   encoding: unicode
+   database: karan_production
+   username: hemant
+   password: hemant
+   host: localhost
+   port: 5432
