@@ -23,10 +23,11 @@
 
   <div>
     <%= form.label :doctor %><br>
-    <%= form.text_field :doctor %>
+    <%= form.collection_select :doctor_id, Doctor.order(:name), :id, :name %>
   </div>
 
   <div>
     <%= form.submit %>
   </div>
+
 <% end %>
