@@ -4,7 +4,7 @@ default: &default
 development:
    adapter: postgresql
    encoding: unicode
-   database: karan_development
+   database: hospital_development
    username: hemant
    password: hemant
    host: localhost
@@ -12,7 +12,7 @@ development:
 test:
    adapter: postgresql
    encoding: unicode
-   database: karan_test
+   database: hospital_test
    username: hemant
    password: hemant
    host: localhost
@@ -20,7 +20,7 @@ test:
 production:
    adapter: postgresql
    encoding: unicode
-   database: karan_production
+   database: hospital_production
    username: hemant
    password: hemant
    host: localhost

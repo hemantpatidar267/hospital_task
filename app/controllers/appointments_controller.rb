@@ -5,8 +5,8 @@ class AppointmentsController < ApplicationController
   end
 
   def create
-    @appointment = Appointment.new(appointment_params)
-    if @appointment.save!
+    @appointment = current_pateint.appointments.new(appointment_params)
+    if @appointment.save
       redirect_to @appointment
     else
       render :new, status: :unprocessable_entity
