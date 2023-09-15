@@ -5,7 +5,7 @@ ActiveAdmin.register Appointment do
   #
   # Uncomment all parameters which should be permitted for assignment
   #
-  # permit_params :name, :age, :address, :disease, :doctor_id, :pateint_id
+    permit_params :name, :age, :address, :disease, :doctor_id, :pateint_id
   #
   # or
   #

@@ -5,7 +5,7 @@ ActiveAdmin.register Doctor do
   #
   # Uncomment all parameters which should be permitted for assignment
   #
-  # permit_params :name, :specialist, :address
+  permit_params :name, :specialist, :address
   #
   # or
   #

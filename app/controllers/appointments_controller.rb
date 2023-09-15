@@ -6,7 +6,8 @@ class AppointmentsController < ApplicationController
 
   def create
     @appointment = current_pateint.appointments.new(appointment_params)
-    if @appointment.save
+    UserMailer.welcome_email(current_pateint).deliver_now
+    if @appointment.save!
       redirect_to @appointment
     else
       render :new, status: :unprocessable_entity
@@ -15,12 +16,6 @@ class AppointmentsController < ApplicationController
 
   def show
     @appointment = Appointment.find(params[:id])
-  end
-
-  def edit
-  end
-
-  def update
   end
 
   def index
